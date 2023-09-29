@@ -32,7 +32,7 @@ export const Header: React.FC<Props> = ({setIsLoading}) => {
             onClick={() => {
               setIsLoading(true);
               setTimeout(() => {
-                navigate('/');
+                navigate('/Home');
                 setIsLoading(false);
               }, 2000);
             }}
