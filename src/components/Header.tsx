@@ -27,7 +27,7 @@ export const Header: React.FC<Props> = ({setIsLoading}) => {
           <button
             className={classNames('header__link', {
               'header__link-active':
-                location.pathname === '/Home' || location.pathname === '/Startups',
+                location.pathname === '/Home' || location.pathname === '/Startups' || location.pathname === '/Home/',
             })}
             onClick={() => {
               setIsLoading(true);
