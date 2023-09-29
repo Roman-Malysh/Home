@@ -1,0 +1,188 @@
+@import '../styles/Mixins.scss';
+@import '../styles/Variables.scss';
+
+
+.form-back {
+  background-color: $lightOrange;
+  background-image: url('../images/Subtract.svg');
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  padding: 20px;
+  @include onTablet {
+    padding: 40px;
+    background-size: 40%;
+  }
+  @include onDesktop {
+    padding: 80px;
+    background-size: 40%;
+  }
+  &__title {
+    color: $white;
+    font-size: 30px;
+    @include onTablet {
+      font-size: 50px;
+    }
+    @include onDesktop {
+      font-size: 70px;
+    }
+  }
+  &__p {
+    color: $white;
+    font-size: 20px;
+    @include onTablet {
+      font-size: 30px;
+    }
+    @include onDesktop {
+      font-size: 50px;
+    }
+  }
+}
+
+.form {
+  background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+  @include onTablet {
+    width: 50%;
+    padding: 20px;
+  }
+  @include onDesktop {
+    width: 400px;
+    padding: 40px;
+  }
+  &__error {
+    color: $red;
+    margin: 5px 10px;
+    font-size: 12px;
+    animation: appearance 2s forwards linear;
+    &-hidden {
+      color: $grey;
+      margin: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  &__button {
+    transition: 0.3s;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    border: none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+    &-ty {
+      background-color: $blue;
+    }
+    cursor: pointer;
+    @include onDesktop {
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+    }
+  }
+  &__input {
+    border: none;
+    height: 50px;
+    margin: 2px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: $dark;
+    @include onDesktop {
+      &:hover {
+        border: 1px solid #F0F0F0;
+      }
+    }
+    &::placeholder {
+      color: $darkgrey;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid #E0E0E0;
+    }
+    &:first-of-type {
+      margin-top: 60px;
+    }
+  }
+  &__textArea {
+    border: none;
+    height: 100px;
+    margin: 2px 0;
+    padding: 10px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: $dark;
+    @include onDesktop {
+      &:hover {
+        border: 1px solid #F0F0F0;
+      }
+    }
+    &::placeholder {
+      color: $darkgrey;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid #E0E0E0;
+    }
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,123 @@
+@import './Mixins.scss';
+@import './Variables.scss';
+
+.footer {
+  background-color: $grey;
+  padding: 20px;
+  &__icon {
+    margin-right: 5px;
+    @include onDesktop {
+      &:first-of-type {
+        margin-top: 10px;
+      }
+      margin-bottom: 10px;
+    }
+  }
+  &__section-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    @include onTablet {
+      margin: 0;
+    }
+    @include onDesktop {
+      margin: 0 30px;
+    }
+  }
+  &__p-gray {
+    color: $darkgrey;
+    margin: 0;
+    line-height: 150%;
+    font-size: 13px;
+    text-decoration: none;
+    @include onDesktop {
+      font-size: 15px;
+    }
+    &-link {
+      @include onDesktop {
+        font-size: 15px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__p-blue {
+    color: $blue;
+    margin: 0;
+    line-height: 150%;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    @include onDesktop {
+      font-size: 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__p-bold {
+    color: $dark;
+    margin: 0;
+    line-height: 150%;
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: 700;
+    @include onTablet {
+      margin-top: 30px;
+    }
+    @include onDesktop {
+      margin: 10px 0;
+      font-size: 22px;
+    }
+  }
+  &__home {
+    background-image: url('../images/logo.svg');
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px auto;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    @include onTablet {
+      padding: 10px;
+      width: 200px;
+      height: 30px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  @include onTablet {
+    padding: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include onDesktop {
+    padding: 70px;
+  }
+}
+
+.tablet-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include onDesktop {
+    flex-direction: row;
+  }
+}
+
+.social-wrap {
+  @include onDesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
