@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Home/static/css/main.d227b71f.css",
+    "main.js": "/Home/static/js/main.fd1a012e.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Home/static/js/787.28cb0dcd.chunk.js",
+    "static/media/work1.svg": "/Home/static/media/work1.5b43d34ef35ef2ab59857ab97f74b2fe.svg",
+    "static/media/work3.svg": "/Home/static/media/work3.ac6fe1ecce8835dabd47748b1a925a19.svg",
+    "static/media/work4.svg": "/Home/static/media/work4.b6f5845ff1f9739ca443f436d88b0e65.svg",
+    "static/media/work2.svg": "/Home/static/media/work2.5affae39478d82614a049b44f9cb03b4.svg",
+    "static/media/headerBack.jpg": "/Home/static/media/headerBack.d16ba0baad33c9030977.jpg",
+    "static/media/circular-std-medium-500 (1).ttf": "/Home/static/media/circular-std-medium-500 (1).3fcb6535e39024a69e30.ttf",
+    "static/media/text.svg": "/Home/static/media/text.cd45a3562046ae9ccc2d.svg",
+    "static/media/hiring1.png": "/Home/static/media/hiring1.7bde42613e42b95cc6fc.png",
+    "static/media/hiring2.png": "/Home/static/media/hiring2.9082740dd4565e03e03d.png",
+    "static/media/logo.svg": "/Home/static/media/logo.31c2c11da21f2462809c.svg",
+    "static/media/man.png": "/Home/static/media/man.c2fe9144a6b03e292ba2.png",
+    "static/media/Subtract.svg": "/Home/static/media/Subtract.88a5ee4f8ff52280c351.svg",
+    "index.html": "/Home/index.html",
+    "main.d227b71f.css.map": "/Home/static/css/main.d227b71f.css.map",
+    "main.fd1a012e.js.map": "/Home/static/js/main.fd1a012e.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Home/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d227b71f.css",
+    "static/js/main.fd1a012e.js"
+  ]
+}
